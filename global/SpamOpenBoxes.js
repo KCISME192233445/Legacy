@@ -1,46 +1,47 @@
-let name = prompt("Which box would you like to open (Example: Color)");
-let amt = null;
-let i = 1;
-if (confirm("Would you like to select the amount of boxes?\nOk - Yes\nCancel - No")) {
-    amt = Number(prompt("How many boxes would you like to open."));
-} else {
-    amt = 99999999999999999999999;
-}
+//alert("coded by zastix!!!!!!!") // self promo bad >:(
+zename = prompt("Which box would you like to open (Example: Color)");
+i = 0;
+amt = Number.parseInt(prompt("How many boxes would you like to open."));
 
-function buyBox() {
-    var postData = 'box=' + name;
-    $.post('/worker/box/openbox.php', postData, function(data) {
-        dataSplit = data.split('|')
-        window.blookRarity = dataSplit[1];
-        window.blookUnlocked = dataSplit[0];
-        if (blookRarity === "Uncommon") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px lime;', `${blookUnlocked}`);
-        } else if (blookRarity === "Rare") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px blue;', `${blookUnlocked}`);
-        } else if (blookRarity === "Epic") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px red;', `${blookUnlocked}`);
-        } else if (blookRarity === "Legendary") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px gold;', `${blookUnlocked}`);
-        } else if (blookRarity === "Chroma") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px skyblue;', `${blookUnlocked}`);
-        } else if (blookRarity === "Perfect") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px lemonchiffon;', `${blookUnlocked}`);
-        } else if (blookRarity === "Mystical") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px plum;', `${blookUnlocked}`);
-        } else if (blookRarity === "Divine") {
-            console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px violet;', `${blookUnlocked}`);
-        } else if (blookRarity === undefined) {}
-        if (data === "You're being rate limited.") {
-            i--;
+
+function buyBox(name) {
+    $.post('/worker/box/openbox.php', `box=${name}`, function(data) {
+        if (data.includes("rate")) i--;
+        blookRarity = data.split('|')[1];
+        blookUnlocked = data.split('|')[0];
+        switch (blookRarity) {
+            case "Uncommon":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px lime;', `${blookUnlocked}`);
+                break;
+            case "Rare":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px blue;', `${blookUnlocked}`);
+                break;
+            case "Legendary":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px gold;', `${blookUnlocked}`);
+                break;
+            case "Chroma":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px skyblue;', `${blookUnlocked}`);
+                break;
+            case "Perfect":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px lemonchiffon;', `${blookUnlocked}`);
+                break;
+            case "Mystical":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px plum;', `${blookUnlocked}`);
+                break;
+            case "Divine":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px violet;', `${blookUnlocked}`);
+                break;
+            default:
+                break;
         }
     });
 }
 var check = setInterval(() => {
     if (i <= amt) {
-        buyBox();
+        buyBox(zename);
         i++;
     } else {
         clearInterval(check);
-        alert("Dony buying boxes");
+        alert("Dony buying boxes!");
     }
 }, 751);

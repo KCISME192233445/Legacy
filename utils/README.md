@@ -1,4 +1,4 @@
-# ChangeUsername.js [BETA]
+# changeUsername.js
 ### Changes your username via javascript
-# SpoofAdmin.js
+# spoofAdmin.js
 ### Allows access to the admin panel
