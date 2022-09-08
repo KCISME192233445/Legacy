@@ -5,6 +5,7 @@ join my discord [here](https://discord.gg/xxBtqPHSjW)
 #### Remeber to open a [issue](https://github.com/ZasticBradyn/blacket-hacks/issues) if somthing doesnt work!
 # Announments
 - Blacket is back!, to play it go [here](https://blacket.org/), to get the betastar hacks back go [here](https://github.com/BlacketWare/blacket-hacks/tree/betastar).
+# Blacket Socials
 [site](https://blacket.org/)<br>
 [discord](https://www.youtube.com/watch?v=dQw4w9WgXcQ)<br>
 [github](https://github.com/XOTlC/Blacket)
