@@ -15,7 +15,7 @@ function buyBox(name) {
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px blue;', `${blookUnlocked}`);
                 break;
             case "Epic":
-                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px red;' `${blookUnlocked}`);
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px red;', `${blookUnlocked}`);
                 break;
             case "Legendary":
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px gold;', `${blookUnlocked}`);
@@ -31,9 +31,6 @@ function buyBox(name) {
                 break;
             case "Divine":
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px violet;', `${blookUnlocked}`);
-                break;
-            default:
-                console.log(`These was an unknown Blook found named ${blookUnlocked} with the rarity ${blookRarity}. Please contant an admin, this should not be happening.`)
                 break;
         }
     });
