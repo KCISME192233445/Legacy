@@ -2,7 +2,6 @@ zename = prompt("Which box would you like to open?");
 i = 0;
 amt = Number.parseInt(prompt(`How many of the ${zename} Box would you like to open?`));
 
-
 function buyBox(name) {
     $.post('/worker/box/openbox.php', `box=${name}`, function(data) {
         if (data.includes("rate")) i--;
@@ -34,6 +33,7 @@ function buyBox(name) {
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px violet;', `${blookUnlocked}`);
                 break;
             default:
+                console.log(`These was an unknown Blook found named ${blookUnlocked} with the rarity ${blookRarity}. Please contant an admin, this should not be happening.`)
                 break;
         }
     });
