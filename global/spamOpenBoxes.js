@@ -1,7 +1,6 @@
-//alert("coded by zastix!!!!!!!") // self promo bad >:(
-zename = prompt("Which box would you like to open (Example: Color)");
+zename = prompt("Which box would you like to open?");
 i = 0;
-amt = Number.parseInt(prompt("How many boxes would you like to open."));
+amt = Number.parseInt(prompt(`How many of the ${zename} Box would you like to open?`));
 
 
 function buyBox(name) {
@@ -15,6 +14,9 @@ function buyBox(name) {
                 break;
             case "Rare":
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px blue;', `${blookUnlocked}`);
+                break;
+            case "Epic":
+                console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px red;' `${blookUnlocked}`);
                 break;
             case "Legendary":
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px gold;', `${blookUnlocked}`);
@@ -42,6 +44,6 @@ var check = setInterval(() => {
         i++;
     } else {
         clearInterval(check);
-        alert("Dony buying boxes!");
+        alert("Done buying boxes!\nCheck the Blooks page or the Console for your results.");
     }
 }, 751);
