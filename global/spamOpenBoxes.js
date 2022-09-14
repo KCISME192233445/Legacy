@@ -7,6 +7,7 @@ function buyBox(name) {
         if (data.includes("rate")) i--;
         blookRarity = data.split('|')[1];
         blookUnlocked = data.split('|')[0];
+        updateTokens();
         switch (blookRarity) {
             case "Uncommon":
                 console.log('%c%s', 'color: white; font-size: 25px; text-shadow: 0px 0px 15px lime;', `${blookUnlocked}`);
