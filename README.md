@@ -1,5 +1,5 @@
 # blacket-hacks
-hacks for blacket, coded by [zastix](https://github.com/notzastix)<br>
+hacks for blacket, coded by [zastix](https://github.com/notzastix) & everyone at [blacketware](https://github.com/BlacketWare)<br>
 proudly 100% open-source<br>
 join my discord [here](https://discord.gg/xxBtqPHSjW)
 #### Remeber to open a [issue](https://github.com/notzastix/blacket-hacks/issues) if somthing doesnt work!
