@@ -1,4 +1,3 @@
-// dont touch my fucking file vr
 setInterval(() => {
     $.post('/worker/box/openbox.php', `box=Add Tokens`);
     if (location.pathname === '/market/') {
@@ -6,5 +5,5 @@ setInterval(() => {
       if (isNaN(curAmt)) updateTokens();
       document.getElementById("tokensText").innerHTML = curAmt.toLocaleString();
     }
-    console.log("[addTokens.js] Added 25000 tokens!");
+    console.log("[addTokens.js] Added 2,500 tokens!");
 }, 751);
