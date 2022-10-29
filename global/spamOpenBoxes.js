@@ -1,13 +1,13 @@
 let i = 0;
 const colors = {
-  Divine: 'violet',
-  Mystical: 'plum',
-  Perfect: 'lemonchiffon',
-  Chroma: 'skyblue',
-  Legendary: 'gold',
-  Epic: 'red',
-  Rare: 'blue',
-  Uncommon: 'lime'
+  Divine: '#ee82ee',
+  Mystical: '#a335ee',
+  Perfect: '#fffacd',
+  Chroma: '#00ccff',
+  Legendary: '#ff910f',
+  Epic: '#be0000',
+  Rare: '#0a14fa',
+  Uncommon: '#4bc22e'
 }
 
 let zename = prompt("Which box would you like to open?");
@@ -19,7 +19,7 @@ function buyBox(name) {
     if (data === 'You\'re being rate limited.') return
     if (data.includes("rate")) i--;
     console.log('%c%s', `color: white; font-size: 25px; text-shadow: 0px 0px 15px ${colors[data.split('|')[1]]}`, `${data.split('|')[0]}`);
-    updateTokens();
+    try { updateTokens(); } catch {}
   });
 }
 
