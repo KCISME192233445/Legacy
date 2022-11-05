@@ -17,6 +17,7 @@ if (isNaN(amt)) amt = Number.MAX_VALUE;
 function buyBox(name) {
   $.post('/worker/box/openbox.php', `box=${name}`, function(data) {
     if (data === 'You\'re being rate limited.') return;
+    if (data === 'UNAUTHORIZED') location = '/login/';
     if (data.includes("rate")) i--;
     console.log('%c%s', `color: white; font-size: 25px; text-shadow: 0px 0px 15px ${colors[data.split('|')[1]]}`, `${data.split('|')[0]}`);
     try { updateTokens(); } catch {};
