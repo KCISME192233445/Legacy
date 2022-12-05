@@ -1,5 +1,6 @@
 // this is different from the spammer due to its nature of you clicking more
-// based off of https://github.com/XOTlC/Blacket/blob/main/utilities/speedupBoxOpenAnimation.js
+// based off a deleted script by Xotic
+
 function showBuy(boxName, boxPrice, boxColor, boxRates) {
   window.currentTokens = document.getElementById("tokensText").innerHTML;
   window.currentBoxPrice = boxPrice;
