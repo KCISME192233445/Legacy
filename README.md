@@ -1,10 +1,14 @@
+# THESE CHEATS ARE FOR BLACKET LEGACY, NOT THE NEW BLACKET!
+### LEGACY STILL EXISTS AT [LEGACY.BLACKET.ORG](https://legacy.blacket.org)
+### TO GET CHEATS FOR THE NEW BLACKET, CLICK [HERE](https://github.com/BlacketWare/v2)
+<br>
+
 # Legacy
 hacks for blacket legacy, coded by everyone at [blacketware](https://github.com/BlacketWare)<br>
 proudly 100% open-source<br>
 join the discord [here](https://discord.gg/xxBtqPHSjW)
-#### Remeber to open a [issue](https://github.com/BlacketWare/blacket-hacks/issues) if somthing doesnt work!
-# Announments
-- zastix's github was flagged (he had alts)
+#### Remeber to open a [issue](https://github.com/BlacketWare/Legacy/issues) if somthing doesnt work!
+
 # Blacket Socials
 [site](https://blacket.org/)<br>
 [discord](https://discord.gg/blacket)<br>
