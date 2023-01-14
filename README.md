@@ -1,18 +1,17 @@
-# THESE CHEATS ARE FOR BLACKET LEGACY, NOT THE NEW BLACKET!
-### LEGACY STILL EXISTS AT [LEGACY.BLACKET.ORG](https://legacy.blacket.org)
-### TO GET CHEATS FOR THE NEW BLACKET, CLICK [HERE](https://github.com/BlacketWare/v2)
+# Legacy
+### These are cheats for Blacket [Legacy](https://legacy.blacket.org), NOT the [newer Blacket](https://blacket.org).
+### Cheats for the [newer Blacket](https://blacket.org) can be found by [clicking here](https://github.com/BlacketWare/v2).
+### These cheats have been archived (will not be updated).
+
 <br>
 
-# Legacy
-hacks for blacket legacy, coded by everyone at [blacketware](https://github.com/BlacketWare)<br>
-proudly 100% open-source<br>
-join the discord [here](https://discord.gg/xxBtqPHSjW)
-#### Remeber to open a [issue](https://github.com/BlacketWare/Legacy/issues) if somthing doesnt work!
+### [Discord Server](https://discord.gg/BJCms66bcu)
 
 # Blacket Socials
 [site](https://blacket.org/)<br>
 [discord](https://discord.gg/blacket)<br>
 [github](https://github.com/XOTlC/Blacket)
+
 # Usage
 1. find the file you want.
 2. click the copy button to add it to your clipboard.
