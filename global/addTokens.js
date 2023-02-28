@@ -3,7 +3,7 @@ if (location.pathname === '/market/') {
     $.post('/worker/box/openbox.php', `box=Add Tokens`, function(data) {
       if (data === 'Blacket|Divine|/images/blacketImageRainbow.gif') {
         updateTokens();
-        console.log("[addTokens.js] Added 25,000 tokens!");
+        console.log("[addTokens.js] Added 10,000,000,000 tokens!");
       };
     });
   }, 200);
